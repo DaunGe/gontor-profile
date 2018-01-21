@@ -38,10 +38,10 @@ header{
   background-position:center;
 }
 
-header .gontor-text-box{
+.gontor-text-box{
   position: absolute;
   width: 1140;
-  top: 50%;
+  top: 45%;
   left: 21%;
   transform: translate(-50%, -50%;);
 }
@@ -74,18 +74,20 @@ header h1{
   transition: background-color 0.5s, border 0.5s, color 0.5s;
 }
 
-.btn-about:link, .btn-about:visited{
+.btn-about:link,
+.btn-about:visited{
   /* background: #d35400; */
   border: 2px solid #d35400;
 }
 
-.btn-branch:link, .btn-branch:visited{
+.btn-branch:link,
+.btn-branch:visited{
   border: 2px solid #2980b9;
 }
 
-.btn-contact:link, .btn-contact:visited{
+.btn-contact:link,
+.btn-contact:visited{
   border: 2px solid #8e44ad;
-
 }
 
 .btn-about:hover, .btn-about:active{
@@ -105,16 +107,22 @@ header h1{
 /******************************/
 /*nav */
 /******************************/
-.logo{
+.logo {
   float: left;
   height: 150px;
   width: auto;
   margin-top:-10px;
   margin-left:25px;
+  padding: 0 10px;
   position: absolute;
+  transform: scale(1);
 
 
+}
 
+.logo:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .main-nav, .navbar-left {
@@ -122,11 +130,12 @@ header h1{
   list-style: none;
   margin-top:30px;
   margin-left: 130px;
+  /* padding-right: 5px;; */
 
 }
 .main-nav li{
   display: inline-block;
-  padding-left: 20px;
+  padding:0 10px;
 }
 
 .main-nav li a:link,
@@ -142,22 +151,27 @@ header h1{
 
 .main-nav  li .about:hover,
 .main-nav  li .about:active{
+  color: #d35400;
   border-bottom: 2px solid #d35400;
 }
 .main-nav  li .gontorBranch:hover,
 .main-nav  li .gontorBranch:active{
+  color: #2980b9;
   border-bottom: 2px solid #2980b9;
 }
 .main-nav  li .contact:hover,
 .main-nav  li .contact:active{
+  color: #8e44ad;
   border-bottom: 2px solid #8e44ad;
-  margin-right: 10px;
+
 }
 
-.second-nav, .navbar-right {
+.second-nav,
+.navbar-right {
   margin-top:30px;
   margin-right: 50px;
-  margin-left: 150px;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -183,6 +197,20 @@ header h1{
 }
 .second-nav li a:hover,
 .second-nav li a:active{
-border-bottom: 2px solid #16a085;
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+}
 
+footer{
+  background-color: #333;
+  color:#ffffff;
+}
+.footer-nav{
+float:right;
+list-style: none;
+
+}
+
+.social-links{
+  float: left;
 }
